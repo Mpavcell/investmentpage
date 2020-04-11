@@ -6,6 +6,7 @@
 body {
     font-family: 'Roboto Condensed', 'Open Sans', sans-serif;
     box-sizing: border-box;
+    display: grid;
 }
 
 .wrapper {
@@ -14,7 +15,7 @@ body {
 }
 
 
-    /*header (logo + button) */
+    /*header (logo + button)*/
 
 .gridcontainer {
     grid-column: 2 / 3;
@@ -26,7 +27,7 @@ body {
     padding: 25px 0px;
 }
 
-        /*header-logo*/
+        /*header: logo*/
 
 .logobox {
     display: table;
@@ -57,7 +58,7 @@ span {
     text-transform: uppercase;
 }
 
-        /*header-button*/
+        /*header: button*/
 
 .btn {
     text-align: end;
@@ -74,7 +75,7 @@ span {
 }
 
 
-    /*main*/
+    /*main (textbox + form + image + testimonials)*/
 
 .bgimg {
     grid-column: 1 / 4;
@@ -88,6 +89,51 @@ span {
 
 .maincontainer {
     grid-column: 2 / 3;
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+
+        /*main: textbox*/
+
+.textbox {
+    grid-column: 1 / 8;
+}
+
+
+        /*main: form*/
+
+.formbox {
+    grid-column: 8 / 13;
+    background-color: white;
+}
+
+.formtext {
+    text-align: center;
+    color: #19b490;
+}
+
+.formtext h2 {
+    font-size: 1.875rem;
+    font-weight: 300;
+}
+
+
+        /*main: image*/
+
+.imagebox {
+    grid-column: 2 / 12;
+    margin-top: 35rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+        /*main: testimonials*/
+
+.testimonialbox {
+    grid-column: 2 / 12;
 }
 
 
