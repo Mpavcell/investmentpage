@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1150px 1fr;
+}
+
+
+    /*header (logo + button) */
+
+.gridcontainer {
+    grid-column: 2 / 3;
+}
+
+.headcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px 0px;
+}
+
+        /*header-logo*/
+
+.logobox {
+    display: table;
+}
+
+span {
+    display: table-cell;
+    vertical-align: middle;  
+}
+
+.logotext {
+    padding-right: 250px;
+}
+
+.logotext a {
+    text-decoration: none;
+}
+
+.logotext a h1 {
+    color: #19b490;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.logotext a p {
+    color: #19b490;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+}
+
+        /*header-button*/
+
+.btn {
+    text-align: end;
+    display: table;
+}
+
+.btn span a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #90959a;
+    background-color: #edeff1;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+    /*main*/
+
+.bgimg {
+    grid-column: 1 / 4;
+
+    display: grid;
+    grid-template-columns: 1fr 1150px 1fr;
+
+    background-image: url(https://demo.themezy.com/system/resources/demo_themes/000/000/033//dummy/bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.maincontainer {
+    grid-column: 2 / 3;
+}
+
+
+    /*footer*/
+
+.footer {
+    grid-column: 2 / 3;
+}
