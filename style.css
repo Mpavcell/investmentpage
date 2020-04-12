@@ -65,6 +65,8 @@ span {
     display: table;
 }
 
+
+
 .btn span a {
     text-decoration: none;
     text-transform: uppercase;
@@ -74,6 +76,9 @@ span {
     border-radius: 5px;
 }
 
+.btn span a:hover {
+    background-color: #dedfe0;
+}
 
     /*main (textbox + form + image + testimonials)*/
 
@@ -99,6 +104,74 @@ span {
 
 .textbox {
     grid-column: 1 / 8;
+
+    margin-top: 100px;
+    position: relative;
+}
+
+.dontmisschanceimg {
+    width: 150px;
+    position: absolute;
+    left: 480px;
+    top: 100px;
+}
+
+.maintext h1 {
+    font-size: 3.75rem;
+    font-weight: 300;
+    color: white;
+}
+
+.maintext p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: white;
+    width: 80%;
+    padding-top: 35px;
+}
+
+.rateofreturn {
+    margin: 50px 0px;
+    display: table;
+}
+
+.percent {
+    display: inline;
+    background-color: #19b490;
+    color: white;
+    font-size: 3.75rem;
+    font-weight: 700;
+    padding: 0px 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.rate {
+    display: inline;
+    background-color: #15326b;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 400;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 170px;
+}
+
+.list {
+    list-style: none;
+    color: white;
+    font-size: 1.125rem;
+}
+
+.list li {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    background-image: url(images/check-solidgreen.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 16px;
 }
 
 
@@ -106,11 +179,15 @@ span {
 
 .formbox {
     grid-column: 8 / 13;
+
     background-color: white;
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 5px;
 }
 
 .formtext {
-    text-align: center;
     color: #19b490;
 }
 
@@ -119,21 +196,132 @@ span {
     font-weight: 300;
 }
 
+.formtext p {
+    font-weight: 100;
+    padding: 20px 0px;
+}
+
+select,
+input {
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    border: 1px solid #d8dadc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+select:hover {
+    background-color: #f3f3f3;
+}
+
+input:hover {
+    background-color: #f3f3f3;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+#fullname {
+    background-image: url(images/icon-user.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#companyname {
+    background-image: url(images/icon-factory.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#email {
+    background-image: url(images/icon-envelope.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#phonenumber {
+    background-image: url(images/icon-phone.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#countryselect {
+    background-image: url(images/icon-globe.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+
+button {
+    text-align: center;
+    margin-top: 45px;
+    background-color: #19b490;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+}
+
 
         /*main: image*/
 
 .imagebox {
-    grid-column: 2 / 12;
-    margin-top: 35rem;
-    border: 1px solid black;
+    grid-column: 1 / 13;
+
+    margin-top: 9rem;
     text-align: center;
+}
+
+.imagebox h2 {
+    font-size: 2.25rem;
+    font-weight: 100;
+    color: #19b490;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+
+.formbtn {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #19b490;
+    color: white;
+    font-family: inherit;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+.formbtn:hover {
+    opacity: 0.75;
 }
 
 
         /*main: testimonials*/
 
 .testimonialbox {
-    grid-column: 2 / 12;
+    grid-column: 1 / 13;
+    margin-top: 80px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-top: 1px solid #d8dadc;
+    border-bottom: 1px solid #d8dadc;
+}
+
+.testimonialbox img {
+    padding: 0px 25px;
 }
 
 
@@ -141,4 +329,9 @@ span {
 
 .footer {
     grid-column: 2 / 3;
+    text-align: center;
+    padding: 40px 0px;
+    color: #90959a;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
