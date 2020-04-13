@@ -429,6 +429,7 @@ button {
                 padding-right: 100px;
             }
 
+        }
 
         /*fourth media query*/
 
@@ -446,6 +447,8 @@ button {
                 padding-right: 80px;
             }
 
+        }
+
 
         /*fifth media query*/
 
@@ -455,7 +458,7 @@ button {
                 padding-right: 50px;
             }
 
-
+        }
         
         /*sixth media query*/
 
@@ -465,4 +468,4 @@ button {
                 padding-right: 0;
             }
 
-           
+        }
