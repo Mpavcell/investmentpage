@@ -6,7 +6,6 @@
 body {
     font-family: 'Roboto Condensed', 'Open Sans', sans-serif;
     box-sizing: border-box;
-    display: grid;
 }
 
 .wrapper {
@@ -147,7 +146,7 @@ span {
 }
 
 .rate {
-    display: inline;
+    display: inline-block;
     background-color: #15326b;
     color: white;
     text-transform: uppercase;
@@ -335,3 +334,135 @@ button {
     font-size: 0.9rem;
     font-weight: 400;
 }
+
+
+
+    /*!!MEDIA QUERIES!!*/
+
+
+        /*first media query*/
+
+        @media screen and (max-width: 1200px) {
+             
+                .wrapper {
+                    display: grid;
+                    grid-template-columns: 1fr 920px 1fr;
+                }
+
+                .bgimg {
+                    grid-column: 1 / 4;
+                
+                    display: grid;
+                    grid-template-columns: 1fr 920px 1fr;
+                
+                    background-image: url(https://demo.themezy.com/system/resources/demo_themes/000/000/033//dummy/bg.jpg);
+                    background-repeat: no-repeat;
+                }
+
+                .imagebox {
+                    width: 100%;                    
+                }
+
+                .imagebox img {
+                    width: 100%;
+                }
+
+                .dontmisschanceimg {
+                    width: 150px;
+                    position: absolute;
+                    left: 370px;
+                    top: 90px;
+                }
+                
+            }
+
+
+
+        
+        /*second media query*/
+
+        @media screen and (max-width: 930px) {
+        
+                .wrapper {
+                    display: grid;
+                    grid-template-columns: 1fr 80% 1fr;
+                }
+
+                .bgimg {
+                    grid-column: 1 / 4;                
+                    display: grid;
+                    grid-template-columns: 1fr 80% 1fr;               
+                    background-image: url(https://demo.themezy.com/system/resources/demo_themes/000/000/033//dummy/bg.jpg);
+                    background-repeat: no-repeat;
+                    background-size: 2600px
+                }
+
+                .logotext {
+                    padding-right: 130px;
+                }
+
+                .dontmisschanceimg {
+                    display: none;
+                }
+
+                .textbox {
+                    grid-column: 1 / 13;
+                }
+
+                .formbox {
+                    grid-column: 1 / 13;
+                    margin-top: 50px;                    
+                }
+
+                .imagebox {
+                    margin-top: 100px;
+                }
+
+            }
+
+        
+        /*third media query*/
+
+        @media screen and (max-width: 750px) {
+
+            .logotext {
+                padding-right: 100px;
+            }
+
+
+        /*fourth media query*/
+
+        @media screen and (max-width: 650px) {
+
+            .wrapper {
+                grid-template-columns: 1fr 90% 1fr;
+            }
+
+            .bgimg {
+                grid-template-columns: 1fr 90% 1fr;  
+            }
+
+            .logotext {
+                padding-right: 80px;
+            }
+
+
+        /*fifth media query*/
+
+        @media screen and (max-width: 550px) {
+
+            .logotext {
+                padding-right: 50px;
+            }
+
+
+        
+        /*sixth media query*/
+
+        @media screen and (max-width: 490px) {
+
+            .logotext {
+                padding-right: 0;
+            }
+
+           
